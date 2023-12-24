@@ -1,32 +1,32 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material"; // Importing necessary components from the "@mui/material" library
-import React from "react"; // Importing the React library
+import { Card, CardContent, CardMedia, Typography } from "@mui/material"; 
+import React from "react";
 
-function ItemDetails({ item }) { // Defining a function called "ItemDetails" which takes a parameter called "item"
+function ItemDetails({ item }) { 
     return (
         <>
-            <Card> // Rendering a Card component
-                <CardMedia // Rendering a CardMedia component
-                    sx={{ height: 140 }} // Setting the style of the CardMedia component
-                    image={item.largeImageURL} // Setting the image prop of the CardMedia component
+            <Card> 
+                <CardMedia
+                    sx={{ height: 140 }} 
+                    image={item.largeImageURL} 
                 />
-                <CardContent> // Rendering a CardContent component
-                    <Typography gutterBottom variant="h5" component="div"> // Rendering a Typography component
-                        {item.tags} // Using the "tags" property of the "item" object as the content of the Typography component
+                <CardContent> 
+                    <Typography gutterBottom variant="h5" component="div"> 
+                        {item.tags}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary"> // Rendering a Typography component
-                        Views: {item.views} // Using the "views" property of the "item" object as the content of the Typography component
+                    <Typography variant="body2" color="text.secondary">
+                        Views: {item.views} 
                     </Typography>
-                    <Typography variant="body2" color="text.secondary"> // Rendering a Typography component
-                        Downloads: {item.downloads} // Using the "downloads" property of the "item" object as the content of the Typography component
+                    <Typography variant="body2" color="text.secondary"> 
+                        Downloads: {item.downloads}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary"> // Rendering a Typography component
-                        Collections: {item.collections} // Using the "collections" property of the "item" object as the content of the Typography component
+                    <Typography variant="body2" color="text.secondary">
+                        Collections: {item.collections}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary"> // Rendering a Typography component
-                        Likes: {item.likes} // Using the "likes" property of the "item" object as the content of the Typography component
+                    <Typography variant="body2" color="text.secondary">
+                        Likes: {item.likes}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary"> // Rendering a Typography component
-                        Comments: {item.comments} // Using the "comments" property of the "item" object as the content of the Typography component
+                    <Typography variant="body2" color="text.secondary"> 
+                        Comments: {item.comments}
                     </Typography>
                 </CardContent>
             </Card>
